@@ -7,7 +7,7 @@ import { getMethod, uploadSingleFile } from "../../services/request";
 
 const StaffChat = () => {
   const [client, setClient] = useState(null);
-  const [itemUser, setItemUser] = useState([]); 
+  const [itemUser, setItemUser] = useState([]);
   const [itemChat, setItemChat] = useState([]); // Initialize as empty array
   const [email, setEmail] = useState(null);
   const [newMessagesCount, setNewMessagesCount] = useState({});
