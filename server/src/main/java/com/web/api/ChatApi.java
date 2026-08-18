@@ -33,7 +33,7 @@ public class ChatApi {
     private UserUtils userUtils;
 
     @GetMapping("/customer/my-chat")
-    public ResponseEntity<?> myChat(){
+    public ResponseEntity<List<Chatting>> myChat(){
         List<Chatting> result = chatRepository.myChat(userUtils.getUserWithAuthority().getId());
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
